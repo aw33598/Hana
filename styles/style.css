@@ -147,7 +147,7 @@ body {
     position: relative;
 }
 
-.shape p {
+.shape img {
     width: 150%;
     position: absolute;
     left: -20%;
