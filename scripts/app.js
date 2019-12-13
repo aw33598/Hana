@@ -60,3 +60,22 @@
 // sendButton.addEventListener('keyup', sendMail);
 
 
+$(function() {
+    $("#contact .button").click(function() {
+        var name = $("#form_name").val();
+        var email = $("#form_email").val();
+        var text = $("#msg_text").val();
+        var dataString = 'name='+ name + '&email=' + email + '&text=' + text;
+
+        $.ajax({
+            type: "POST",
+            url: "email.php",
+            data: dataString,
+            success: function(){
+                alert('Email Sent');
+            }
+        });
+
+        return false;
+    });
+});
