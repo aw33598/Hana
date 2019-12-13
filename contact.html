@@ -49,20 +49,16 @@
           </div>
 
 
-          <section id="left">
-            <label for="form_name">Name</label>
-            <input name="form_name" id="form_name" type="text" >
-      
-            <label for="form_email">Email</label>
-            <input name="form_email" id="form_email" type="email" >
-         </section>
-      
-         <section id="right">
-            <label for="form_msg">Message</label>
-            <textarea name="form_msg" id="form_msg"></textarea>
-            <input id="submit" class="button" name="submit" type="button" value="Send">
-         </section>
-      
+          <form method="post" name="myemailform" action="form-to-email.php">
+
+            Enter Name:	<input type="text" name="name">
+            
+            Enter Email Address:	<input type="text" name="email">
+            
+            Enter Message:	<textarea name="message"></textarea>
+            
+            <input type="submit" value="Send Form">
+            </form>
 
 
           <div class="container">
@@ -191,6 +187,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="./scripts//app.js"></script>
+    <script src="./scripts/app.js"></script>
 </body>
 </html>
